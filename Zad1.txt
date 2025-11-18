@@ -1,0 +1,19 @@
+function createBook(title, author, pages) {
+  return {
+    title,
+    author,
+    pages,
+    read() {
+      console.log('Czytam książkę');
+    }
+  };
+}
+
+const book1 = createBook('Wiedźmin', 'Andrzej Sapkowski', 320);
+const book2 = createBook('Clean Code', 'Robert Martin', 450);
+
+// Dlaczego to lepsze niż tworzenie każdej książki osobno?
+// 1. Nie powtarza się kodu – jedna funkcja generuje wiele obiektów.
+// 2. Łatwiej wprowadzać zmiany – edytujesz tylko funkcję, a nie każdy obiekt.
+// 3. Struktura obiektów jest spójna i czytelna.
+// 4. Kod jest krótszy i bardziej przejrzysty dzięki ES6 shorthand.
