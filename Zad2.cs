@@ -6,11 +6,11 @@ function createCar(brand, model, year, mileage) {
     mileage,
 
     displayInfo() {
-      console.log(`${this.brand} ${this.model} (${this.year}) – ${this.mileage} km`);
+      console.log(this.brand + " " + this.model + " " + this.year + " - " + this.mileage + " km");
     },
 
     drive(distance) {
-      console.log(`Przejechano ${distance} km`);
+      console.log("Przejechano " + distance + " km");
     }
   };
 }
